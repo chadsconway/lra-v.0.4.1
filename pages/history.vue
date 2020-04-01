@@ -61,4 +61,10 @@
 	b-button {
 		color: gray;
 	}
+	b-container {
+		bottom: 150px;
+	}
+	.contwrap {
+		padding-bottom: 150px;
+	}
 </style>

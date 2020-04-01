@@ -90,7 +90,7 @@
 <script>
 	import themeColors from '@/components/theme-colors.vue';
 	export default {
-			transition: {
+		transition: {
 			duration: 500,
 			enterActiveClass: 'animated slideInUp',
 			leaveActiveClass: 'animated slideOutDown'
@@ -104,5 +104,9 @@
 <style scoped>
 	b-button {
 		color: gray;
+	}
+
+	.contwrap {
+		padding-bottom: 150px;
 	}
 </style>

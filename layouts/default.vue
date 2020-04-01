@@ -56,6 +56,9 @@
 		padding-top: 60px;
 		padding-bottom: 120px;
 	}
+	b-container {
+		padding-bottom: 150px;
+	}
 	.shrinkfab {
 		position: fixed;
 		bottom: 10px;
