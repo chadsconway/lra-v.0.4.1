@@ -5,7 +5,13 @@
 				<b-row align-h="center">
 					<b-col sm="10" md="8" lg="6">
 						<div class="outerlimits">
-					<form v-on:submit.prevent="tempsend">
+					<form
+					 id="RegistrationRequest" 
+					 v-model:action="formemail" method="POST"
+					 v-on:click.prevent="checkemail"					 
+					 >
+					 <h1 class="font-weight-bold text-white">Registration:</h1>
+					
 						<input
 							type="hidden"
 							name="subject"
@@ -25,6 +31,7 @@
 								required
 								name="firstname"
 								value=""
+
 							></b-form-input>
 						</b-form-group>
 						<!-- Last name -->
@@ -39,6 +46,7 @@
 								required
 								name="lastname"
 								value=""
+
 							></b-form-input>
 						</b-form-group>
 						<!-- Email -->
@@ -55,6 +63,7 @@
 								required
 								name="_replyto"
 								value=""
+
 							></b-form-input>
 						</b-form-group>
 						<!-- Mailing address -->
@@ -69,6 +78,7 @@
 								required
 								name="mailaddress"
 								value=""
+
 							>
 							</b-form-input>
 						</b-form-group>
@@ -80,6 +90,7 @@
 								required
 								name="city"
 								value=""
+
 							>
 							</b-form-input>
 						</b-form-group>
@@ -95,6 +106,7 @@
 								required
 								name="zipcode"
 								value=""
+
 							>
 							</b-form-input>
 						</b-form-group>
@@ -152,7 +164,7 @@
 
 						<b-form-group label-class="text-white"  id="input-group-5">
 							<b-form-checkbox-group v-model="checked" id="checkboxes-5">
-								<b-form-checkbox
+								<b-form-checkbox class="chkbx"
 									value="Please send me information so I may join in praying This Living Rosary Devotion!"
 									name="join"
 									>Please send me information so I may join in praying This
@@ -196,6 +208,8 @@
 	export default Vue.extend({
 		data() {
 			return {
+				franksemail: '//formspree.io/ourladyslivingrosary@yahoo.com',
+				rogersemail: '//formspree.io/info@thelivingrosaryapostolate.com',
 				country: '',
 				region: '',
 				email: '',
@@ -213,6 +227,15 @@
 				show: true
 			};
 		},
+		computed: {
+			formemail() {
+				if(this.country === "United States"){
+					return this.franksemail;
+				} else {
+					return this.rogersemail;
+				}
+			}
+		},
 		transition: {
 			duration: 500,
 			enterActiveClass: 'animated slideInUp',
@@ -222,6 +245,11 @@
 			themeColors
 		},
 		methods: {
+			checkemail: function(evt) {
+				evt.preventDefault();
+				console.log();
+				console.log();
+			},
 			tempsend: function(evt) {
 				console.log({
 					country: this.country,
@@ -258,9 +286,11 @@
 	});
 </script>
 <style scoped>
-
+	.chkbx {
+		color: white;
+	}
 	.outerlimits {
-		background-color: rgba(10,10,10,0.5);
+		background-color: rgba(0,87,85,0.8);
 		padding: 20px;
 		z-index:1;
 	}
@@ -271,7 +301,7 @@
 		right: 0;
 		bottom: 0;
 		z-index: 0;
-		background-image: url('/img/rosaryborder.png');
+		background-image: url('/img/pb/blue-church.jpg');
 		filter: blur(8px);
 		-webkit-filter: blur(8px);
 		width: 100vw;

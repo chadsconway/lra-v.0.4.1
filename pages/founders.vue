@@ -10,6 +10,15 @@
 				</b-card>
 				<b-card
 					img-top
+					img-src="/img/arborelius.jpg"
+					bg-variant="dark"
+					text-variant="white"
+					class="text-large"
+					>Eminence Cardinal Anders Arborelius OCD, <br />
+					Protector of the Living Rosary Apostolate
+				</b-card>
+				<b-card
+					img-top
 					img-src="/img/founders.jpg"
 					bg-variant="dark"
 					text-variant="white"
