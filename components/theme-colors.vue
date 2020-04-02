@@ -1,6 +1,4 @@
-<template>
-	<div></div>
-</template>
+<template> </template>
 <style>
 	.contwrap {
 		position: absolute;

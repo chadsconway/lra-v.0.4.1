@@ -48,6 +48,13 @@ export const state = () => ({
 	],
 	approvalsArray: [
 		{
+			id: 'arborelius',
+			pdfurl: '/approvals/arborelius.pdf',
+			author: 'Bishop Anders Arborelius',
+			church: 'Bishop of Stockholm',
+			location: 'Stockholm, Sweden'
+		},
+		{
 			id: 'burke',
 			pdfurl: '/approvals/burke.pdf',
 			author: 'Raymond Leo Cardinal Burke',
@@ -55,11 +62,25 @@ export const state = () => ({
 			location: 'Malta'
 		},
 		{
+			id: 'grimditch',
+			pdfurl: '/approvals/grimditch.pdf',
+			author: 'Rev Kevin Grimditch',
+			church: 'Roman Catholic Diocese of Pheonix',
+			location: 'Phoenix, AZ, United States'
+		},
+		{
 			id: 'darius',
 			pdfurl: '/approvals/darius.pdf',
 			author: 'Rev Bishop Vincent Darius',
 			church: "St. George's-in-Grenada",
 			location: "St. George's, Grenada"
+		},
+		{
+			id: 'mcconnell',
+			pdfurl: '/approvals/mcconnell.pdf',
+			author: 'Fr Patrick McConnell',
+			church: 'St. Theresa Church',
+			location: 'Three Lakes, WI, United States'
 		},
 		{
 			id: 'greenbay',
@@ -81,13 +102,6 @@ export const state = () => ({
 			author: 'Rev Fr Manny Ediza',
 			church: 'St. Michael Parish',
 			location: 'San Diego, CA, United States'
-		},
-		{
-			id: 'arborelius',
-			pdfurl: '/approvals/arborelius.pdf',
-			author: 'Bishop Anders Arborelius',
-			church: 'Bishop of Stockholm',
-			location: 'Stockholm, Sweden'
 		},
 		{
 			id: 'hugo',
@@ -116,6 +130,12 @@ export const state = () => ({
 			author: 'Bishop Joseph Gordon',
 			church: 'Roman Catholic Diocese of Bridgetown',
 			location: 'Bridgetown, Barbados, West Indies'
+		},
+		{
+			id: 'chartersafe',
+			pdfurl: '/approvals/chartersafe.pdf',
+			author: 'Diocese of Superior',
+			church: 'Diocese of Superior, Wisconsin'
 		}
 	],
 	detailsArray: [

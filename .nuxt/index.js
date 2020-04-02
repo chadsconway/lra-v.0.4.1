@@ -12,10 +12,11 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_workbox_baaaefc2 from 'nuxt_plugin_workbox_baaaefc2' // Source: .\\workbox.js (mode: 'client')
-import nuxt_plugin_bootstrapvue_720b62f2 from 'nuxt_plugin_bootstrapvue_720b62f2' // Source: .\\bootstrap-vue.js (mode: 'all')
-import nuxt_plugin_plugin_911f6758 from 'nuxt_plugin_plugin_911f6758' // Source: .\\vuetify\\plugin.js (mode: 'all')
-import nuxt_plugin_axios_0b38f7c3 from 'nuxt_plugin_axios_0b38f7c3' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_workbox_72000d98 from 'nuxt_plugin_workbox_72000d98' // Source: .\\workbox.js (mode: 'client')
+import nuxt_plugin_bootstrapvue_39aaf047 from 'nuxt_plugin_bootstrapvue_39aaf047' // Source: .\\bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_plugin_387b2cc2 from 'nuxt_plugin_plugin_387b2cc2' // Source: .\\vuetify\\plugin.js (mode: 'all')
+import nuxt_plugin_axios_3af1aa18 from 'nuxt_plugin_axios_3af1aa18' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_countryregionselect_f5e060b6 from 'nuxt_plugin_countryregionselect_f5e060b6' // Source: ..\\plugins\\countryregionselect.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -172,20 +173,24 @@ async function createApp (ssrContext) {
 
   // Plugin execution
 
-  if (process.client && typeof nuxt_plugin_workbox_baaaefc2 === 'function') {
-    await nuxt_plugin_workbox_baaaefc2(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_72000d98 === 'function') {
+    await nuxt_plugin_workbox_72000d98(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_bootstrapvue_720b62f2 === 'function') {
-    await nuxt_plugin_bootstrapvue_720b62f2(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_39aaf047 === 'function') {
+    await nuxt_plugin_bootstrapvue_39aaf047(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_plugin_911f6758 === 'function') {
-    await nuxt_plugin_plugin_911f6758(app.context, inject)
+  if (typeof nuxt_plugin_plugin_387b2cc2 === 'function') {
+    await nuxt_plugin_plugin_387b2cc2(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_0b38f7c3 === 'function') {
-    await nuxt_plugin_axios_0b38f7c3(app.context, inject)
+  if (typeof nuxt_plugin_axios_3af1aa18 === 'function') {
+    await nuxt_plugin_axios_3af1aa18(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_countryregionselect_f5e060b6 === 'function') {
+    await nuxt_plugin_countryregionselect_f5e060b6(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first

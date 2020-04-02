@@ -9,10 +9,10 @@
 					></embed>
 					
         </b-col>
-  
+				<theme-colors />
 			</b-row>
 		</b-container>
-		<theme-colors />
+		
 	</div>
 </template>
 

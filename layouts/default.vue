@@ -2,14 +2,15 @@
 	<div id="app">
 		<v-app>
 			<fab></fab>
-			<div>
-				<Header />
-				<Sidenav v-bind:class="{ hideSideNav: sidenavIsHid }" />
-				<div id="main">
-					<nuxt />
-				</div>
+
+			<Header />
+
+			<Sidenav v-bind:class="{ hideSideNav: sidenavIsHid }" />
+			<div class="contwrap">
+				<nuxt />
 			</div>
 			<MobileBottomNav />
+
 			<Footer />
 		</v-app>
 	</div>
@@ -52,13 +53,10 @@
 	};
 </script>
 <style>
-	#main {
-		padding-top: 60px;
-		padding-bottom: 120px;
-	}
-	b-container {
+	.contwrap {
 		padding-bottom: 150px;
 	}
+
 	.shrinkfab {
 		position: fixed;
 		bottom: 10px;
@@ -71,13 +69,7 @@
 	.startPos {
 		margin-left: 60px;
 	}
-	.main-container {
-		display: flex;
-		flex-wrap: nowrap;
-	}
-	.main-item {
-		flex: 1, 1, auto;
-	}
+
 	.hideSideNav {
 		display: none;
 	}

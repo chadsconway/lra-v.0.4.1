@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<b-container>
 		<div class="container">
 			<img src="/img/fatima.jpg" alt="Notebook" style="width:100%;" />
 			<div class="content">
@@ -23,7 +23,7 @@
 				</b-col>
 			</b-row>
 		</b-container>
-	</div>
+	</b-container>
 </template>
 
 <script>

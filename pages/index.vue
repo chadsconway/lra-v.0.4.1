@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<b-container>
 		<div class="w3-display-container" max-height="450px">
 			<v-img
 				src="img/still_from_video.png"
@@ -8,7 +8,7 @@
 			></v-img>
 		</div>
 		<video-frame-2 />
-	</div>
+	</b-container>
 </template>
 
 <script>

@@ -14,12 +14,7 @@
 			</svg>
 			Home
 		</nuxt-link>
-		<nuxt-link to="/donate" class=" w3-bar-item w3-button cc-text">
-			<svg viewBox="0 0 496 496" width="30" height="30" class="icon">
-				<use xlink:href="#christian-1" />
-			</svg>
-			Donate
-		</nuxt-link>
+
 		<nuxt-link to="/overview" class=" w3-bar-item w3-button cc-text">
 			<svg viewBox="0 0 512 512.00027" width="30" height="30" class="icon">
 				<use xlink:href="#bracelet" />
@@ -62,6 +57,12 @@
 				<use xlink:href="#three-candles" />
 			</svg>
 			Founders
+		</nuxt-link>
+		<nuxt-link to="/donate" class=" w3-bar-item w3-button cc-text">
+			<svg viewBox="0 0 496 496" width="30" height="30" class="icon">
+				<use xlink:href="#christian-1" />
+			</svg>
+			Donate
 		</nuxt-link>
 		<theme-colors />
 	</div>

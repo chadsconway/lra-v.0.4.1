@@ -18,7 +18,7 @@
 		>
 			<!-- Title -->
 			<h4 class="card-title">
-				<strong>Founders Frank and Trudy Bonack</strong>
+				<strong>Presented by Frank and Trudy Bonack</strong>
 			</h4>
 			<!-- Subtitle -->
 			<h6 class="font-weight-bold indigo-text py-2">

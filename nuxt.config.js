@@ -51,7 +51,13 @@ export default {
 	/*
 	 ** Plugins to load before mounting the App
 	 */
-	plugins: [],
+	plugins: [
+		/**
+		 * Country and regions select dropdown for
+		 * join.vue
+		 */
+		'@/plugins/countryregionselect.js'
+	],
 	/*
 	 ** Nuxt.js dev-modules
 	 */

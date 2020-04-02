@@ -1,116 +1,242 @@
 <template>
-	<div id="masterdiv">
+	<b-container>
 		<div class="bluebg"></div>
-		<div class="contwrap">
 			<b-container>
 				<b-row align-h="center">
-					<b-col xs="12" sm="12" md="8" lg="6" class="gradient1 rounded">
-						<form
-							id="signupform"
-							action="https://formspree.io/info@thelivingrosaryapostolate.com"
-							method="POST"
-							@reset="onReset"
+					<b-col sm="10" md="8" lg="6">
+						<div class="outerlimits">
+					<form v-on:submit.prevent="tempsend">
+						<input
+							type="hidden"
+							name="subject"
+							value="Request to begin Living Rosary Apostolate Devotion"
+						/>
+						<!-- Nested Name Group & email -->
+						<!-- First name -->
+						<b-form-group
+							label-class="text-white"
+							label-cols-lg="3"
+							label=" First Name:"
+							label-for="input-2"
 						>
-							<input
-								type="hidden"
-								name="subject"
-								value="Request to begin Living Rosary Apostolate Devotion"
-							/>
-							<b-form-group
-								id="input-group-1"
-								label="Email address:"
-								label-for="input-1"
-							>
-								<b-form-input
-									id="input-1"
-									v-model="form.email"
-									type="email"
-									required
-									placeholder="Enter email"
-									name="_replyto"
-									value=""
-								></b-form-input>
-							</b-form-group>
-							<b-form-group label="Name:" label-for="input-2">
-								<b-form-input
-									id="input-2"
-									v-model="form.firstname"
-									required
-									placeholder="Enter name"
-									name="name"
-									value=""
-								></b-form-input>
-							</b-form-group>
-							<b-form-group label="Country of Residence:" label-for="input-3">
-								<b-form-input
-									v-model="form.country"
-									required
-									placeholder="Enter Country of Residence"
-									name="Country"
-									value=""
-								></b-form-input>
-							</b-form-group>
-
-							<b-form-group id="input-group-4">
-								<b-form-checkbox-group v-model="form.checked" id="checkboxes-4">
-									<b-form-checkbox
-										value="Please send me information so I may join in praying This Living Rosary Devotion!"
-										name="join"
-										>Please send me information so I may join in praying This
-										Living Rosary Devotion!</b-form-checkbox
-									>
-								</b-form-checkbox-group>
-							</b-form-group>
-
-							<b-form-textarea
-								id="note"
-								v-model="form.note"
-								placeholder="(optional) Write a personalized note..."
-								rows="3"
-								max-rows="6"
-								name="note"
+							<b-form-input
+								id="input-2"
+								v-model="firstname"
+								required
+								name="firstname"
 								value=""
-							></b-form-textarea>
-
-							<b-button type="submit" variant="primary" value="Send"
-								>Submit</b-button
+							></b-form-input>
+						</b-form-group>
+						<!-- Last name -->
+						<b-form-group label-class="text-white" 
+							label-cols-lg="3"
+							label="Last Name:"
+							label-for="input-3"
+						>
+							<b-form-input
+								id="input-3"
+								v-model="lastname"
+								required
+								name="lastname"
+								value=""
+							></b-form-input>
+						</b-form-group>
+						<!-- Email -->
+						<b-form-group label-class="text-white" 
+							label-cols-sm="3"
+							id="input-group-1"
+							label="Email address:"
+							label-for="input-1"
+						>
+							<b-form-input
+								id="input-1"
+								v-model="email"
+								type="email"
+								required
+								name="_replyto"
+								value=""
+							></b-form-input>
+						</b-form-group>
+						<!-- Mailing address -->
+						<b-form-group label-class="text-white" 
+							label-cols-sm="3"
+							label="Mailing Address:"
+							label-for="mailaddress"
+						>
+							<b-form-input
+								id="mailaddress"
+								v-model="mailaddress"
+								required
+								name="mailaddress"
+								value=""
 							>
-							<b-button type="reset" variant="danger">Reset</b-button>
-						</form>
-					</b-col>
+							</b-form-input>
+						</b-form-group>
+						<!-- City -->
+						<b-form-group label-class="text-white"  label-cols-sm="3" label="City:" label-for="city">
+							<b-form-input
+								id="city"
+								v-model="city"
+								required
+								name="city"
+								value=""
+							>
+							</b-form-input>
+						</b-form-group>
+						<!-- Zipcode -->
+						<b-form-group label-class="text-white" 
+							label-cols-sm="3"
+							label="Zipcode:"
+							label-for="zipcode"
+						>
+							<b-form-input
+								id="zipcode"
+								v-model="zipcode"
+								required
+								name="zipcode"
+								value=""
+							>
+							</b-form-input>
+						</b-form-group>
+					<!-- Phone number -->
+						<b-form-group label-class="text-white" 
+							label-cols-sm="3"
+						label="Phone number:" label-for="phonenumber">
+								<b-form-input
+									id="phonenumber"
+									v-model="phonenumber"
+									required
+									placeholder=""
+									name="phonenumber"
+									value=""
+								>
+								</b-form-input>
+							</b-form-group>
+						<!-- Country -->
+						<b-form-group label-class="text-white" 
+							label-cols-sm="3"
+							label="Country of Residence:"
+							label-for="country"
+						>
+							<div id="dh-input-wrap">
+								<country-select
+									style="display:block;"
+									className="form-control"
+									v-model="country"
+									:country="country"
+									required
+									name="Country"
+									countryName
+									value=""
+								></country-select>
+							</div>
+						</b-form-group>
+						<!-- Region -->
+						<b-form-group label-class="text-white" 
+							label-cols-sm="3"
+							label="Region of Residence:"
+							label-for="region"
+						>
+							<region-select
+								className="form-control"
+								v-model="region"
+								:country="country"
+								:region="region"
+								countryName
+								regionName
+								required
+								value=""
+							>
+							</region-select
+						></b-form-group>
+
+						<b-form-group label-class="text-white"  id="input-group-5">
+							<b-form-checkbox-group v-model="checked" id="checkboxes-5">
+								<b-form-checkbox
+									value="Please send me information so I may join in praying This Living Rosary Devotion!"
+									name="join"
+									>Please send me information so I may join in praying This
+									Living Rosary Devotion!</b-form-checkbox
+								>
+							</b-form-checkbox-group>
+						</b-form-group>
+						<!-- Optional note -->
+						<b-form-textarea
+							id="note"
+							v-model="note"
+							placeholder="(optional) Write a personalized note..."
+							rows="3"
+							max-rows="6"
+							name="note"
+							value=""
+						></b-form-textarea>
+						<!-- Submit -->
+						<b-button-group class="p-3">
+						<b-button class="btn btn-lg" type="submit" variant="primary" value="Send">
+							Submit
+						</b-button>
+						<b-button class="btn btn-lg" type="reset" variant="danger">Reset</b-button>
+						</b-button-group>
+					</form>
+					</div>
+				</b-form-group>
+				</b-col>
 				</b-row>
+			
 			</b-container>
-		</div>
-		<theme-colors />
-	</div>
+				<theme-colors />
+		
+	</b-container>
 </template>
 
 <script>
+	import Vue from 'vue';
 	import axios from 'axios';
 	import themeColors from '@/components/theme-colors.vue';
-	export default {
+	export default Vue.extend({
+		data() {
+			return {
+				country: '',
+				region: '',
+				email: '',
+				firstname: '',
+				lastname: '',
+				mailaddress: '',
+				city: '',
+				zipcode: '',
+				phonenumber: '',
+				country: '',
+				region: '',
+				note: '',
+				checked: [],
+				sendto: '',
+				show: true
+			};
+		},
 		transition: {
 			duration: 500,
 			enterActiveClass: 'animated slideInUp',
 			leaveActiveClass: 'animated slideOutDown'
 		},
-		data() {
-			return {
-				form: {
-					email: '',
-					name: '',
-					note: '',
-					checked: [],
-					country: '',
-					sendto: ''
-				},
-				show: true
-			};
-		},
 		components: {
 			themeColors
 		},
 		methods: {
+			tempsend: function(evt) {
+				console.log({
+					country: this.country,
+					region: this.region,
+					email: this.email,
+					zipcode: this.zipcode,
+					phonenumber: this.phonenumber,
+					firstname: this.firstname,
+					lastname: this.lastname,
+					mailaddress: this.mailaddress,
+					city: this.city,
+					note: this.note,
+					sendto: this.sendto
+				});
+			},
 			onReset: function(evt) {
 				evt.preventDefault();
 				// Reset our form values
@@ -118,8 +244,9 @@
 				this.form.firstName = '';
 				this.form.lastName = '';
 				this.form.note = '';
-				yarn;
-				this.form.country = null;
+				this.form.country = '';
+				this.form.zipcode = '';
+				this.form.region = '';
 				this.form.checked = [];
 				// Trick to reset/clear native browser form validation state
 				this.show = false;
@@ -127,16 +254,24 @@
 					this.show = true;
 				});
 			}
-		},
-		asyncData() {}
-	};
+		}
+	});
 </script>
 <style scoped>
+
+	.outerlimits {
+		background-color: rgba(10,10,10,0.5);
+		padding: 20px;
+		z-index:1;
+	}
 	.bluebg {
 		position: absolute;
-		top: 0;
+		top: -40px;
+		left: 0;
+		right: 0;
+		bottom: 0;
 		z-index: 0;
-		background-image: url('/img/pb/blue-church.jpg');
+		background-image: url('/img/rosaryborder.png');
 		filter: blur(8px);
 		-webkit-filter: blur(8px);
 		width: 100vw;
@@ -145,18 +280,14 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
-	.contwrap {
-		position: absolute;
-		top: 100px;
-		width: 100%;
-	}
+
 	b-container {
 		position: absolute;
-		margin-top: 100px;
 		z-index: 2;
+		overflow-y: scroll;
 	}
 	b-col {
-		padding-top: 100px;
+		padding-top: 5px;
 	}
 	.l5 {
 		background-color: #ebffff;
@@ -196,7 +327,5 @@
 		color: #fff;
 		background-image: linear-gradient(to right, #007977, #005755);
 	}
-	#masterdiv {
-		padding-bottom: 200px;
-	}
+
 </style>
