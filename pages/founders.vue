@@ -5,7 +5,7 @@
 				<b-card
 					bg-variant="dark"
 					text-variant="white"
-					title="Founders of This Living Rosary Apostolate"
+					title="Protector of This Living Rosary Apostolate"
 				>
 				</b-card>
 				<b-card
@@ -14,8 +14,8 @@
 					bg-variant="dark"
 					text-variant="white"
 					class="text-large"
-					>Eminence Cardinal Anders Arborelius OCD, <br />
-					Protector of the Living Rosary Apostolate
+				>
+					Anders Cardinal Arborelius O.C.D., <br />
 				</b-card>
 				<b-card
 					img-top
@@ -24,8 +24,8 @@
 					text-variant="white"
 				>
 					<b-card-text
-						>(left to right: Glenda & Roger LaFleur, Genevieve Mamai, Frank &
-						Trudy Bonack)</b-card-text
+						>Glenda & Roger LaFleur Olsson, Genevieve Mamai, Frank & Trudy
+						Bonack</b-card-text
 					></b-card
 				>
 				<b-card
@@ -60,21 +60,17 @@
 </template>
 
 <script>
-	import themeColors from '@/components/theme-colors.vue';
-	export default {
-		transition: {
-			duration: 500,
-			enterActiveClass: 'animated slideInUp',
-			leaveActiveClass: 'animated slideOutDown'
-		},
-		components: {
-			themeColors
-		}
-	};
+import themeColors from '@/components/theme-colors.vue';
+export default {
+	transition: {
+		duration: 500,
+		enterActiveClass: 'animated fadeIn',
+		leaveActiveClass: 'animated fadeOut',
+	},
+	components: {
+		themeColors,
+	},
+};
 </script>
 
-<style scoped>
-	b-button {
-		color: gray;
-	}
-</style>
+<style scoped></style>

@@ -2,13 +2,10 @@
 	<b-container>
 		<b-row align-h="center">
 			<b-col xs="12" sm="12" md="8" lg="6" class="gradient1 rounded">
-				<b-card
-					img-top
-					img-src="/img/pb/cross.jpg"
-					bg-variant="dark"
-					text-variant="white"
-					title="How To Pray This Living Rosary Apostolate Devotion"
-				>
+				<b-card bg-variant="dark" text-variant="white">
+					<b-card-title class="text-center"
+						>How To Pray This Living Rosary</b-card-title
+					>
 					<b-card-text>
 						The Rosary will begin the 1st of each month. Each person who joins
 						will be assigned to specific decades and mysteries which will be for
@@ -83,25 +80,21 @@
 </template>
 
 <script>
-	import themeColors from '@/components/theme-colors.vue';
-	export default {
-		transition: {
-			duration: 500,
-			enterActiveClass: 'animated slideInUp',
-			leaveActiveClass: 'animated slideOutDown'
-		},
-		components: {
-			themeColors
-		}
-	};
+import themeColors from '@/components/theme-colors.vue';
+export default {
+	transition: {
+		duration: 500,
+		enterActiveClass: 'animated fadeIn',
+		leaveActiveClass: 'animated fadeOut',
+	},
+	components: {
+		themeColors,
+	},
+};
 </script>
 
 <style scoped>
-	b-button {
-		color: gray;
-	}
-
-	.contwrap {
-		padding-bottom: 150px;
-	}
+.contwrap {
+	padding-bottom: 150px;
+}
 </style>

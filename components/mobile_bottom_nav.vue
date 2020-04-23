@@ -1,14 +1,12 @@
 <template>
 	<div class="gradient1">
 		<div class="text-center">
-			<v-bottom-sheet v-model="sheet" class="d3transp">
+			<v-bottom-sheet v-model="sheet" class="d3transp no-theme">
 				<v-list>
-					<v-list-item @click="sheet = false">Close Menu</v-list-item>
-					<v-list-item
-						@click="sheet = false"
-						to="/"
-						class=" w3-bar-item w3-button cc-text"
+					<v-list-item @click="sheet = false" class="d5">
+						Close Menu</v-list-item
 					>
+					<v-list-item @click="sheet = false" to="/" class=" cc-text">
 						<svg viewBox="0 0 310 310" width="30" height="30" class="icon">
 							<use xlink:href="#church" />
 						</svg>
@@ -145,29 +143,29 @@
 	</div>
 </template>
 <script>
-	import themeColors from '@/components/theme-colors.vue';
-	export default {
-		data() {
-			return {
-				navClasses: 'w3-theme-d3',
-				sheet: false,
-				tiles: [
-					{ img: 'keep.png', title: 'Keep' },
-					{ img: 'inbox.png', title: 'Inbox' },
-					{ img: 'hangouts.png', title: 'Hangouts' },
-					{ img: 'messenger.png', title: 'Messenger' },
-					{ img: 'google.png', title: 'Google+' }
-				]
-			};
-		},
-		components: {
-			themeColors
-		}
-	};
+import themeColors from '@/components/theme-colors.vue';
+export default {
+	data() {
+		return {
+			navClasses: 'w3-theme-d3',
+			sheet: false,
+			tiles: [
+				{ img: 'keep.png', title: 'Keep' },
+				{ img: 'inbox.png', title: 'Inbox' },
+				{ img: 'hangouts.png', title: 'Hangouts' },
+				{ img: 'messenger.png', title: 'Messenger' },
+				{ img: 'google.png', title: 'Google+' },
+			],
+		};
+	},
+	components: {
+		themeColors,
+	},
+};
 </script>
 <style scoped>
-	span {
-		color: white;
-		text-decoration: none;
-	}
+span {
+	color: white;
+	text-decoration: none;
+}
 </style>

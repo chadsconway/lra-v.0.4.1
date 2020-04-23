@@ -18,75 +18,76 @@
 		>
 			<!-- Title -->
 			<h4 class="card-title">
-				<strong>Presented by Frank and Trudy Bonack</strong>
+				<strong>Video Explaining the Living Rosary</strong>
 			</h4>
 			<!-- Subtitle -->
 			<h6 class="font-weight-bold indigo-text py-2">
-				Video Explaining the Living Rosary
+				Presented by Frank and Trudy Bonack
 			</h6>
 			<!-- Text -->
-			<p class="card-text">
+			<!-- 4/23/2020 hid text -->
+			<!-- <p class="card-text">
 				Join us in prayer, join us in peace, join us,
 				<strong>The Living Rosary Apostolate.</strong> <br />We are worldwide,
 				with registered Apostolate Members in over 70 countries!
-			</p>
+			</p> -->
 		</div>
 	</section>
 </template>
 
 <script>
-	export default {};
+export default {};
 </script>
 
 <style scoped>
-	@keyframes entervideo {
-		from {
-			margin-bottom: 0;
-		}
-		to {
-			margin-bottom: 30px;
-		}
+@keyframes entervideo {
+	from {
+		margin-bottom: 0;
 	}
-	@keyframes leavevideo {
-		from {
-			margin-bottom: 30px;
-		}
-		to {
-			margin-bottom: 0;
-		}
-	}
-	section {
-		width: 80vw;
-	}
-	iframe {
-		width: 100%;
-		height: 60vh;
-	}
-	#videobox {
-		width: 100%;
-		justify-content: center;
-		animation-name: leavevideo;
-		animation-duration: 0.3s;
-		animation-delay: 0.3s;
-		animation-fill-mode: both;
-	}
-	#videobox:hover {
+	to {
 		margin-bottom: 30px;
-		animation-name: entervideo;
-		animation-duration: 0.3s;
-		animation-delay: 0.3s;
-		animation-fill-mode: both;
 	}
-	#textbox {
-		margin-left: 4%;
-		margin-right: 4%;
-		margin-top: -30px;
+}
+@keyframes leavevideo {
+	from {
+		margin-bottom: 30px;
 	}
-	#create .v-speed-dial {
-		position: absolute;
+	to {
+		margin-bottom: 0;
 	}
+}
+section {
+	width: 80vw;
+}
+iframe {
+	width: 100%;
+	height: 60vh;
+}
+#videobox {
+	width: 100%;
+	justify-content: center;
+	animation-name: leavevideo;
+	animation-duration: 0.3s;
+	animation-delay: 0.3s;
+	animation-fill-mode: both;
+}
+#videobox:hover {
+	margin-bottom: 30px;
+	animation-name: entervideo;
+	animation-duration: 0.3s;
+	animation-delay: 0.3s;
+	animation-fill-mode: both;
+}
+#textbox {
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: -30px;
+}
+#create .v-speed-dial {
+	position: absolute;
+}
 
-	#create .v-btn--floating {
-		position: relative;
-	}
+#create .v-btn--floating {
+	position: relative;
+}
 </style>

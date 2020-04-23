@@ -1,5 +1,9 @@
 <template>
-	<div id="footer" class="w3-theme-d4 p-0 w3-hide-small" :elevation="15">
+	<div
+		id="footer"
+		class="dh-d4 d-xs-none d-sm-none d-md-block d-lg-block "
+		:elevation="15"
+	>
 		<b-container>
 			<b-row>
 				<b-col xs="12" sm="6" md="4">
@@ -60,37 +64,37 @@
 </template>
 
 <script>
-	export default {};
+export default {};
 </script>
 
 <style scoped>
-	#footer {
-		position: fixed;
-		padding-top: 5px;
-		padding-left: 60px;
-		padding-right: 10px;
-		padding-bottom: 40px;
-		bottom: 0;
-		left: 0;
-		height: 75px;
-		width: 100%;
-		font-size: 12px;
-		line-height: 25px;
-		text-align: start;
-	}
-	.container {
-		display: flex;
-	}
-	.h-flex {
-		flex-basis: 1 0 1;
-	}
-	.h-flex-item {
-		flex-basis: 1 0 1;
-	}
-	.v-flex {
-		flex-basis: 1 0 1;
-	}
-	.v-flex-item {
-		flex-basis: 1 0 1;
-	}
+#footer {
+	position: fixed;
+	padding-top: 5px;
+	padding-left: 60px;
+	padding-right: 10px;
+	padding-bottom: 40px;
+	bottom: 0;
+	left: 0;
+	height: 75px;
+	width: 100%;
+	font-size: 12px;
+	line-height: 25px;
+	text-align: start;
+}
+.container {
+	display: flex;
+}
+.h-flex {
+	flex-basis: 1 0 1;
+}
+.h-flex-item {
+	flex-basis: 1 0 1;
+}
+.v-flex {
+	flex-basis: 1 0 1;
+}
+.v-flex-item {
+	flex-basis: 1 0 1;
+}
 </style>

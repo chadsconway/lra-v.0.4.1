@@ -134,21 +134,17 @@
 </template>
 
 <script>
-	import themeColors from '@/components/theme-colors.vue';
-	export default {
-			transition: {
-			duration: 500,
-			enterActiveClass: 'animated slideInUp',
-			leaveActiveClass: 'animated slideOutDown'
-		},
-		components: {
-			themeColors
-		}
-	};
+import themeColors from '@/components/theme-colors.vue';
+export default {
+	transition: {
+		duration: 500,
+		enterActiveClass: 'animated fadeIn',
+		leaveActiveClass: 'animated fadeOut',
+	},
+	components: {
+		themeColors,
+	},
+};
 </script>
 
-<style scoped>
-	b-button {
-		color: gray;
-	}
-</style>
+<style scoped></style>

@@ -29,9 +29,7 @@
 						on how to pray the Living Rosary. In turn these parishioners’
 						numbers grew totaling five hundred devotees, thus began this Living
 						Rosary in the US. The group asked others to help spread this
-						beautiful devotion and rediscover the power of the Rosary. As of
-						June 2019, this Living Rosary has spread to several states and
-						countries in the world.
+						beautiful devotion and rediscover the power of the Rosary.
 					</b-card-text>
 					<b-button href="/" variant="primary">Back</b-button>
 				</b-card>
@@ -42,25 +40,21 @@
 </template>
 
 <script>
-	import themeColors from '@/components/theme-colors.vue';
-	export default {
-		transition: {
-			duration: 500,
-			enterActiveClass: 'animated slideInUp',
-			leaveActiveClass: 'animated slideOutDown'
-		},
-		components: {
-			themeColors
-		}
-	};
+import themeColors from '@/components/theme-colors.vue';
+export default {
+	transition: {
+		duration: 500,
+		enterActiveClass: 'animated fadeIn',
+		leaveActiveClass: 'animated fadeOut',
+	},
+	components: {
+		themeColors,
+	},
+};
 </script>
 
 <style scoped>
-	b-button {
-		color: gray;
-	}
-
-	.contwrap {
-		padding-bottom: 150px;
-	}
+.contwrap {
+	padding-bottom: 150px;
+}
 </style>

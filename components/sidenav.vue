@@ -69,126 +69,64 @@
 </template>
 
 <script>
-	import iconspritelite from '@/components/iconspritelite.vue';
-	import themeColors from '@/components/theme-colors.vue';
-	export default {
-		components: {
-			iconspritelite,
-			themeColors
-		},
-		name: 'sidenav',
-		data: function() {
-			return {
-				myColor: 'w3-theme-d1',
-				bkClass: 'bk',
-				blurClass: 'blur',
-				navwidth: '60px',
-				isWide: false,
-				sidenavIsHid: false,
-				variants: [
-					{
-						variantId: 'wide',
-						variantwidth: '200px'
-					},
-					{
-						variantId: 'narrow',
-						variantwidth: '60px'
-					}
-				]
-			};
-		},
-		methods: {
-			updateWidth(variantId) {
-				if (variantId === 'wide') {
-					this.navwidth = '200px';
-					this.isWide = true;
-				}
-				if (variantId === 'narrow') {
-					this.navwidth = '60px';
-					this.isWide = false;
-				}
+import iconspritelite from '@/components/iconspritelite.vue';
+import themeColors from '@/components/theme-colors.vue';
+export default {
+	components: {
+		iconspritelite,
+		themeColors,
+	},
+	name: 'sidenav',
+	data: function() {
+		return {
+			myColor: 'w3-theme-d1',
+			bkClass: 'bk',
+			blurClass: 'blur',
+			navwidth: '60px',
+			isWide: false,
+			sidenavIsHid: false,
+			variants: [
+				{
+					variantId: 'wide',
+					variantwidth: '200px',
+				},
+				{
+					variantId: 'narrow',
+					variantwidth: '60px',
+				},
+			],
+		};
+	},
+	methods: {
+		updateWidth(variantId) {
+			if (variantId === 'wide') {
+				this.navwidth = '200px';
+				this.isWide = true;
 			}
-		}
-	};
+			if (variantId === 'narrow') {
+				this.navwidth = '60px';
+				this.isWide = false;
+			}
+		},
+	},
+};
 </script>
 
 <style scoped>
-	.cc-text {
-		color: #fff;
-		opacity: 1;
-	}
-
-	.active {
-		background-color: #005755;
-		color: #fff;
-	}
-	.hideSideNav {
-		display: none;
-	}
-
-	svg use {
-		margin-right: 2%;
-		color: #d1d1d1;
-	}
-	.cc-iconbox {
-		width: 40px;
-		position: inline;
-		left: 0;
-	}
-	#sfs {
-		transition: 0.5s;
-		height: 100%;
-		width: 60px;
-		padding-top: 60px;
-		left: 0;
-		white-space: nowrap;
-		overflow-x: hidden;
-		overflow-y: hidden;
-	}
-
-	a {
-		color: #d1d1d1;
-	}
-
-	a {
-		height: 45px;
-		width: 100%;
-		overflow-x: hidden;
-	}
-
-	a:hover {
-		background-color: #007977;
-	}
-
-	#sfs a {
-		padding: 10px 0px 5px 10px;
-		text-decoration: none;
-		font-size: 18px;
-		display: block;
-	}
-
-	#sfs a:hover {
-		background-color: #007977;
-		color: #d1d1d1;
-	}
-
-	.bk {
-		transition: all 0.5s linear;
-	}
-
-	.blur {
-		opacity: 0.9;
-	}
-	.w3-button {
-		background-color: #007977;
-	}
-	.w3-bar-item {
-		background-color: #007977;
-	}
-	.cc-text {
-		color: white;
-	}
-	.w3-sidebar {
-		background-color: #007977;
-	}
+#sfs {
+	transition: 0.5s;
+	height: 100%;
+	width: 60px;
+	padding-top: 60px;
+	left: 0;
+	white-space: nowrap;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+#sfs a {
+	padding: 10px 0px 5px 10px;
+	text-decoration: none;
+	font-size: 18px;
+	display: block;
+}
 </style>

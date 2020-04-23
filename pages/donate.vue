@@ -21,8 +21,8 @@
 	export default {
 			transition: {
 			duration: 500,
-			enterActiveClass: 'animated slideInUp',
-			leaveActiveClass: 'animated slideOutDown'
+		enterActiveClass: 'animated fadeIn',
+		leaveActiveClass: 'animated fadeOut',
 		},
 		components: {
 			themeColors
@@ -34,9 +34,7 @@
   embed {
     width: 100%;
   }
-	b-button {
-		color: gray;
-	}
+
 	embed:focus {
     outline: none;
   }

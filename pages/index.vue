@@ -1,6 +1,6 @@
 <template>
 	<b-container>
-		<div class="w3-display-container" max-height="450px">
+		<div max-height="450px">
 			<v-img
 				src="img/still_from_video.png"
 				height="100%"
@@ -12,25 +12,17 @@
 </template>
 
 <script>
-	import videoFrame2 from '@/components/video-frame-2';
-	export default {
-		transition: {
+import videoFrame2 from '@/components/video-frame-2';
+export default {
+	transition: {
 			duration: 500,
-			enterActiveClass: 'animated slideInUp',
-			leaveActiveClass: 'animated slideOutDown'
-		},
-		components: {
-			videoFrame2
-		}
-	};
+		enterActiveClass: 'animated fadeIn',
+		leaveActiveClass: 'animated fadeOut',
+	},
+	components: {
+		videoFrame2,
+	},
+};
 </script>
 
-<style scoped>
-	.w3Container {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: stretch;
-	}
-</style>
+<style scoped></style>

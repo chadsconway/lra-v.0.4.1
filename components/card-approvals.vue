@@ -1,6 +1,6 @@
 <template>
-	<div class="w3-container">
-		<div class="approval-card w3-margin">
+	<div>
+		<div class="approval-card ">
 			<b-card-group deck>
 				<b-card text-variant="dark" class="text-center">
 					<template v-slot:header>
@@ -10,7 +10,7 @@
 					<!-- <a v-bind:href="pdfurl" target="_blank">open pdf</a> -->
 					<nuxt-link
 						v-bind:to="`${pdfurl}`"
-						class="w3-theme-d5 w3-padding btn btn-primary"
+						class="btn btn-primary text-white hover p-2 mb-1"
 						target="_blank"
 					>
 						Open Letter
@@ -22,21 +22,21 @@
 </template>
 
 <script>
-	export default {
-		props: {
-			author: String,
-			church: String,
-			location: String,
-			pdfurl: String
+export default {
+	props: {
+		author: String,
+		church: String,
+		location: String,
+		pdfurl: String,
+	},
+	methods: {
+		openPDF: function(event) {
+			console.log('button clicked');
+			console.log(`Event ${event}`);
+			this.$router.push(this.pdfurl);
 		},
-		methods: {
-			openPDF: function(event) {
-				console.log('button clicked');
-				console.log(`Event ${event}`);
-				this.$router.push(this.pdfurl);
-			}
-		}
-	};
+	},
+};
 </script>
 
 <style scoped></style>
