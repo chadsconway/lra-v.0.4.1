@@ -15,24 +15,13 @@
 			Home
 		</nuxt-link>
 
-		<nuxt-link to="/overview" class=" w3-bar-item w3-button cc-text">
+		<nuxt-link to="/how" class=" w3-bar-item w3-button cc-text">
 			<svg viewBox="0 0 512 512.00027" width="30" height="30" class="icon">
 				<use xlink:href="#bracelet" />
 			</svg>
-			Overview
+			How to Pray?
 		</nuxt-link>
-		<nuxt-link to="/what" class=" w3-bar-item w3-button cc-text">
-			<svg viewBox="-1 0 512.00244 512" width="30" height="30" class="icon">
-				<use xlink:href="#prayer" />
-			</svg>
-			What?
-		</nuxt-link>
-		<nuxt-link to="/how" class=" w3-bar-item w3-button cc-text">
-			<svg viewBox="0 0 492.388 492.388" width="30" height="30" class="icon">
-				<use xlink:href="#praying-hands" />
-			</svg>
-			How?</nuxt-link
-		>
+
 		<nuxt-link to="/history" class=" w3-bar-item w3-button cc-text">
 			<svg viewBox="0 -15 512 511" width="30" height="30" class="icon">
 				<use xlink:href="#book" />

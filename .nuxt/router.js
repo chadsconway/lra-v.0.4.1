@@ -9,8 +9,6 @@ const _52d64c18 = () => interopDefault(import('..\\pages\\founders.vue' /* webpa
 const _054ec0d0 = () => interopDefault(import('..\\pages\\history.vue' /* webpackChunkName: "pages_history" */))
 const _d304b6e8 = () => interopDefault(import('..\\pages\\how.vue' /* webpackChunkName: "pages_how" */))
 const _170accc4 = () => interopDefault(import('..\\pages\\join.vue' /* webpackChunkName: "pages_join" */))
-const _7b6fc726 = () => interopDefault(import('..\\pages\\overview.vue' /* webpackChunkName: "pages_overview" */))
-const _8967eb90 = () => interopDefault(import('..\\pages\\what.vue' /* webpackChunkName: "pages_what" */))
 const _ea6b61e4 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
 
 // TODO: remove in Nuxt 3
@@ -53,14 +51,6 @@ export const routerOptions = {
     path: "/join",
     component: _170accc4,
     name: "join"
-  }, {
-    path: "/overview",
-    component: _7b6fc726,
-    name: "overview"
-  }, {
-    path: "/what",
-    component: _8967eb90,
-    name: "what"
   }, {
     path: "/",
     component: _ea6b61e4,

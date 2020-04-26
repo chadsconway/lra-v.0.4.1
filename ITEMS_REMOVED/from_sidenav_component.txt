@@ -1,0 +1,12 @@
+	<nuxt-link to="/what" class=" w3-bar-item w3-button cc-text">
+			<svg viewBox="-1 0 512.00244 512" width="30" height="30" class="icon">
+				<use xlink:href="#prayer" />
+			</svg>
+			What?
+		</nuxt-link>
+    <nuxt-link to="/how" class=" w3-bar-item w3-button cc-text">
+			<svg viewBox="0 0 492.388 492.388" width="30" height="30" class="icon">
+				<use xlink:href="#praying-hands" />
+			</svg>
+			How?</nuxt-link
+		>
