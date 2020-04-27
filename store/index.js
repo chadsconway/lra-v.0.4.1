@@ -13,6 +13,7 @@ export const state = () => ({
 	serverinitid: 0,
 	message: 'initial message',
 	id: 0,
+
 	contacts: [
 		{
 			name: 'Frank Bonack',
@@ -142,15 +143,137 @@ export const state = () => ({
 	],
 	pages: [
 		{
-			id: 'howtopray',
-			icon: '#pray',
-			title: 'How to pray This Living Rosary?',
-			excerpt: '',
-			numStanzas: 1,
+			id: 'donate',
+			icon: '',
+			title: 'Living Rosary Apostolate Online Giving',
 			content: [
 				{
-					stanza: 1,
-					paragraphs: [''],
+					Section: 1,
+					paragraph: 1,
+					modifier: 'salutation',
+					content: 'Dear Living Rosary Family & Friends,',
+				},
+				{
+					Section: 1,
+					paragraph: 2,
+					content:
+						'This Living Rosary Apostolate was started in 2012 with the hope of spreading this simple devotion to bring Catholic and non-Catholic souls to our Dear Lord through the Blessed Virgin Mary.',
+				},
+				{
+					Section: 1,
+					paragraph: 3,
+					content:
+						'The Apostolate grew very quickly at the expense of the founders and donations from a few relatives, friends and neighbors who we will be forever grateful to. But now our needs have grown even more as our traveling has grown and many more people around the world are joining us in prayer. (Praise God!!!).  This Living Rosary is in 68 + Countries and we are continuing to be invited to many more.',
+				},
+				{
+					Section: 1,
+					paragraph: 4,
+					content:
+						'We are turning to you our faithful members and those interested in helping with the many expenses so as to continue spreading this Devotion to all parts of the world.',
+				},
+				{
+					Section: 1,
+					paragraph: 5,
+					content:
+						'Some of the expenses are:   Printing of Living Rosary schedules, Rosary pamphlets, shipping of Rosaries, traveling costs such as fuel, airfare, cab and bus fare, lodging, food etc…',
+				},
+				{
+					Section: 1,
+					paragraph: 6,
+					content:
+						'Our visits to Parishes, Schools, Religious Education Classes, Conferences and Prayer Groups is all done “Free” of charge. Anyone can join this Living Rosary for “Free”.',
+				},
+				{
+					Section: 1,
+					paragraph: 7,
+					content:
+						'We are and have been living in difficult times for many years and Our Lord and Our Lady have always been faithful in hearing and answering our prayers according to God’s Will.  We’re truly grateful for your continued prayers for this Apostolate and Thank You in advance from the bottom of our hearts for whatever amount of money you are able to give to keep the Living Rosary “Living”!!!',
+				},
+				{
+					Section: 1,
+					paragraph: 8,
+					content:
+						'May Faith, Hope and Love continue to flourish in your hearts and souls.  God Love You.',
+				},
+				{
+					Section: 1,
+					paragraph: 9,
+					modifier: 'closing',
+					content: 'From the Founders of This Living Rosary Apostolate ',
+				},
+			],
+		},
+		{
+			id: 'howtopray',
+			icon: '#pray',
+			title: 'How this Living Rosary is prayed',
+			excerpt: '',
+			content: [
+				{
+					Section: 1,
+					paragraph: 1,
+					content:
+						'This living rosary is the rosary in its entirety, but it is prayed in a different format or different way.  You do not need to gather together with a group of people, you pray it individually at your convenience anytime of the day or night.  However, if you desire, it can be prayed together as husband and wife, or as a family, mom and dad with their children, or in our catholic schools or religious education programs, the students by themselves or with their teachers.  It is a wonderfu way to teach our children how to pray the rosary.',
+				},
+				{
+					Section: 1,
+					paragraph: 2,
+					content:
+						'This rosary can be prayed by itself, or included with the rosaries, chaplets or private prayers that we pray on a daily basis. This rosary devotion is very do-able on a daily basis, and we assure you that it will be Spiritually very beneficial for families.',
+				},
+				{
+					Section: 1,
+					paragraph: 3,
+					content:
+						'You will be assigned to a specific decade or mystery of the rosary. You will only pray one decade of the rosary every day, that is it. It is that simple!!! We will use the Joyful Mysteries as an example.  If you are assigned the first joyful mystery you would start with the beginning prayer of the rosary, The sign of the Cross, The Apostles Creed, The Our Father, The Three Hail Marys and The Glory Be. Then you would pray 1 Our Father, 10 Hail Marys, Glory Be and the Fatima Prayer (O’ My Jesus). That is it, you are finished for the day.',
+				},
+				{
+					Section: 2,
+					paragraph: 4,
+					content:
+						'You pray this rosary the same way everyday for 1 month. The 1st day of the 2nd month you switch to the 2nd Joyful Mystery (The Visitation ), pray 1 Our Father, 10 Hail Marys, Glory Be and O’ My Jesus. Pray this decade the same exact way every single day for the entire month. The 1st day of the 3rd month switch to the 3rd decade, pray this decade the same exact way every day for the entire month. The 1st day of the 4th month switch to the 4th decade, the 1st day of the 5th month switch to the 5th decade, and end with the Hail Holy Queen prayer, this completes the Rosary.',
+				},
+				{
+					Section: 2,
+					paragraph: 5,
+					content:
+						'So by praying the Rosary in this fashion it will take you 5 months	to pray one rosary this way, it will take you 20 months to pray all 4 Mysteries of the rosary. (Joyful, Luminous, Sorrowful, Glorious).  Then you just start from the beginning of your schedule again. That is why it is called this “Living Rosary”. It lives on and on and on. One of the beautiful parts about this devotion is the Meditations that are included with your schedule. Before you pray your assigned decade, you find the Meditation on your sheet, read it, focus on it while you are praying your decade.  By doing so, this will draw you more intimately into the lives of our lord and our lady.',
+				},
+				{
+					Section: 2,
+					paragraph: 6,
+					content:
+						'We ask you to please pray for our Holy Father, all of our beloved Cardinals, Bishops, Priests, Deacons, Seminarian vocations, and the religious throughout the entire world.  For all of the pro-life endeavors, and for all of the Spiritual and temporal needs of your own immediate Parish.',
+				},
+				{
+					Section: 3,
+					paragraph: 7,
+					content:
+						"Here lies the beauty and power in this simple devotion.  We have tens of thousands of people around the word who are praying this devotion and each and every day they pray their decade they offer it up for all of you and your families' personal heartfelt intentions, while you pray for them.  So we're praying together in unity as a family, very, very powerful!.",
+				},
+				{
+					Section: 3,
+					paragraph: 8,
+					content:
+						'Upon joining you will receive 3 sheets of information. The 1st sheet will be your 20 month schedule from top to bottom, and when you finish at the bottom of your schedule, you start over again at the top. (It is perpetual, ongoing, you pray this your entire life) The 2nd sheet is an explanation of how this devotion is prayed, along with the suggested intentions at the bottom.  And the 3rd sheet, front and back, are all the meditations that go along with each individual decade that you pray.',
+				},
+				{
+					Section: 3,
+					paragraph: 9,
+					content:
+						'This living rosary is not a new devotion. It started in krakow poland in 1940 during word war II.  When the nazis arrested the Selecian priests, these priests turned to a catholic layman Yantow Wanowkski (Servant of God).  They asked him to gather 15 youth to pray the 15 decades (which are now 20).  These were called living rosary circles. and out of these first 15, 10 of them became priests.  One of these priests we know very well today as our beloved Pope Saint John Paul II.  He promoted this living rosary througout his entire life and wrote about it in several of his books and always taught it to his paritioners. He was often quoted saying the rosary was his favorite prayer.',
+				},
+				{
+					Section: 3,
+					paragraph: 10,
+					content:
+						'When we open our hearst to Jesus and Mary and let them in, that faith, hope, and love that we all long for, that the world longs for, it will flourish in our hearts and souls.',
+				},
+				{
+					Section: 3,
+					paragraph: 11,
+					content:
+						'To receive your schedule and join in the joy of this devotion fill out the short form by <a href="join">clicking here</a>, or scroll down to the contact section at the bottom of this webpage.  Please join us in Praying the Gospel and Changing the World! Thank you and God Love You!',
 				},
 			],
 		},
@@ -159,13 +282,12 @@ export const state = () => ({
 			icon: '#book',
 			title: 'History of This Living Rosary Apostolate',
 			excerpt: '',
-			numStanzas: 1,
 			content: [
 				{
-					stanza: 1,
-					paragraphs: [
-						' During World War II at a Lenten retreat in Poland, servant of God Jan Tyranowski a Catholic layman, was asked by Salesian Priests to organize Living Rosary groups since all priests were targeted by the Nazi regime. Groups were composed of fifteen devotees each meditating upon one of the fifteen mysteries daily. This ministry became a cornerstone for the Catholic underground in 1940. From these original devotions came ten men into the priesthood. At St. Stanislaus University in Krakow, Jan was the youth leader and central figure in the spiritual formation of the young Karol Wojtyla. Karol attended these meetings entitled the Living Rosary which fostered many vocations including Fr. Karol Wojtyla who in turn became Pope John Paul II.  In Mitchell South Dakota, US, in 2003, two priests from neighboring parishes asked their parishioners to start the Living Rosary for Lent. One of these priests Fr. Andrew being from Poland, was friends with Fr. Wojtyla. Father Andrew prayed the Living Rosary from his youth and instructed parishioners on how to pray the Living Rosary. In turn these parishioners’ numbers grew totaling five hundred devotees, thus began this Living Rosary in the US. The group asked others to help spread this beautiful devotion and rediscover the power of the Rosary. As of June 2019, this Living Rosary has spread to several states and countries in the world.',
-					],
+					Section: 1,
+					paragraph: 1,
+					content:
+						'During World War II at a Lenten retreat in Poland, servant of God Jan Tyranowski a Catholic layman, was asked by Salesian Priests to organize Living Rosary groups since all priests were targeted by the Nazi regime. Groups were composed of fifteen devotees each meditating upon one of the fifteen mysteries daily. This ministry became a cornerstone for the Catholic underground in 1940. From these original devotions came ten men into the priesthood. At St. Stanislaus University in Krakow, Jan was the youth leader and central figure in the spiritual formation of the young Karol Wojtyla. Karol attended these meetings entitled the Living Rosary which fostered many vocations including Fr. Karol Wojtyla who in turn became Pope John Paul II.  In Mitchell South Dakota, US, in 2003, two priests from neighboring parishes asked their parishioners to start the Living Rosary for Lent. One of these priests Fr. Andrew being from Poland, was friends with Fr. Wojtyla. Father Andrew prayed the Living Rosary from his youth and instructed parishioners on how to pray the Living Rosary. In turn these parishioners’ numbers grew totaling five hundred devotees, thus began this Living Rosary in the US. The group asked others to help spread this beautiful devotion and rediscover the power of the Rosary. As of June 2019, this Living Rosary has spread to several states and countries in the world.',
 				},
 			],
 		},
@@ -174,30 +296,27 @@ export const state = () => ({
 			icon: '#prayer',
 			title: 'Overview of This Living Rosary Apostolate',
 			excerpt: '',
-			numStanzas: 1,
+		},
+		{
+			id: 'what',
+			icon: '#pray',
+			title: 'What is This Living Rosary?',
+			excerpt: '',
 			content: [
 				{
-					stanza: 1,
-					paragraphs: [
-						'The Living Rosary Apostolate is a devotion that has become a worlwide call to prayer. It is the Rosary in its entirety, but it is a shared devotion and accessible to all even in the busy schedule of our modern society. You do not need to meet with a group of people, you can pray individually as an adult or young person anytime of the day or night at your own convenience. However if you desire, it can be prayed together as a husband and wife, or as a family with your children, or teachers with their student’s in our Catholic schools & CCD classes, it’s a wonderful way to teach the children how to pray the Rosary. This rosary can be prayed by itself, or included with the rosaries, chaplets or private prayers that we pray on a daily basis. This rosary devotion is very do-able on a daily basis, and we assure you that it will be Spiritually very beneficial for you and your family. Each person who joins will be assigned to a specific decade or mystery of the rosary. You will only pray one decade of the rosary every day, that is it. It is that simple!!! For example - let’s take the Joyful Mysteries, if you are assigned the first decade, you would pray the beginning prayers, The sign of the Cross, The Apostles Creed, The Our Father, The Three Hail Marys and The Glory Be. Then you would pray and meditate slowly on the 1st Joyful Mystery(The Annunciation) 1 Our Father, 10 Hail Marys, Glory Be and the Fatima Prayer (O’ My Jesus).  That is it, you are finished for the day. You pray this decade the same exact way every single day for 1 month. Then the 1st day of the 2nd month you switch to the 2nd Joyful Mystery (The Visitation ), pray 1 Our Father, 10 Hail Marys, Glory Be and O’ My Jesus. Pray this decade the same exact way every single day for the entire month. The 1st day of the 3rd month switch to the 3rd decade, pray this decade the same exact way every day for the entire month. The 1st day of the 4th month switch to the 4th decade, the 1st day of the 5th month switch to the 5th decade, and end with the Hail Holy Queen prayer, this completes the Rosary.  So by praying the Rosary in this fashion it will take you 5 months to pray one rosary this way and it will take you 20 months to pray all 4 Mysteries of the rosary. After completion of the 20 month schedule, you would start at the beginning again. That is why it is called The “Living Rosary”. It lives on and on and on. One of the beautiful parts about this devotion is the Meditations that are included with your schedule. Before you pray your assigned decade, you find the designated Meditation, read it and meditate on it while you are praying your decade. This way of praying empties and quiets our hearts from the ways of the world. We are drawn intimately into the lives of Our Lord and Our Lady, and receive the love, peace and joy from Them, that we can’t obtain from worldly things. We ask you to please pray for our Holy Father, all of our beloved Cardinals, Bishops, Priests, Deacons, and the religious throughout the entire world, for vocations, for all of the pro-life endeavors, and for all of the Spiritual and temporal needs of your own Parish. The beauty and power that makes this Rosary so special eminate from the hearts of the millions of people around the world who are also praying this devotion. They pray for all of your own personal heartfelt intentions, while you pray for theirs, so you are praying together in unity as one family. It is very, very powerful. Upon joining you will receive 3 sheets of information . The 1st sheet will be your 20 month schedule from top to bottom, and when you finish at the bottom of your schedule, you start over again at the top. (It is a life time commitment) The 2nd sheet is an explanation on how to pray this Living Rosary, along with the suggested intentions at the bottom, and the 3rd sheet front and back are all the meditations that go along with each individual decade that you pray. This “Living Rosary” began in Nazi occupied Poland during the second World War. Started in Krakow, Poland, as Nazis were arresting the Salesian Priests. The priests asked Catholic layman, Jan Tyranowski, to gather groups of 15 youth to pray the 15 decades (which are now 20). These groups were called Living Rosary Circles.  Pryaing for their freedom and families in war torn Europe, the Living Rosary brought peace and unity to those fleeing for their lives. From this 1st group of 15 youth, 10 became priests. One of these priests name was Fr. Karol Wojtyla, who is now our beloved St. Pope John Paul the II. This Living Rosary was a part of his path to the priesthood. He also prayed and promoted this Rosary his entire life. To receive your schedule and join in the joy of this devotion fill out the short form by <a href="join">clicking here</a>, or scrolling down to the contact section of this webpage.  Please join us in Praying the Gospel and Changing the World! Thank you and God Love You!',
-					],
+					Section: 1,
+					paragraph: 1,
+					content:
+						"This Living Rosary embraces the hearts of thousands of families and individuals through the meditation on one decade daily, unifying their intentions with the Roman Catholic hierarchy, religious, parishes and pro-life endeavors. The devotion shows how the mysteries of Christ's life can be transformed into our daily lives, allowing the experience to live and love as Christ asks of us. Meditating with Jesus and Mary through these mysteries help us to discover the messages her son intends for our daily growth.",
 				},
 			],
 		},
 		{
-			id: 'whatislra',
-			icon: '#pray',
-			title: 'What is This Living Rosary?',
-			excerpt: '',
-			numStanzas: 1,
-			content: [
-				{
-					stanza: 1,
-					paragraphs: [
-						"This Living Rosary embraces the hearts of thousands of families and individuals through the meditation on one decade daily, unifying their intentions with the Roman Catholic hierarchy, religious, parishes and pro-life endeavors. The devotion shows how the mysteries of Christ's life can be transformed into our daily lives, allowing the experience to live and love as Christ asks of us. Meditating with Jesus and Mary through these mysteries help us to discover the messages her son intends for our daily growth.",
-					],
-				},
-			],
+			id: 'home',
+			icon: '',
+			title: 'The Message of This Living Rosary',
+			content:
+				"This Living Rosary embraces the hearts of thousands of families and individuals through the meditation on one decade daily, unifying their intentions with the Roman Catholic hierarchy, religious, parishes and pro-life endeavors. The devotion shows how the mysteries of Christ's life can be transformed into our daily lives, allowing the experience to live and love as Christ asks of us. Meditating with Jesus and Mary through these mysteries help us to discover the messages her son intends for our daily growth.",
 		},
 	],
 	mysteriesArray: [
