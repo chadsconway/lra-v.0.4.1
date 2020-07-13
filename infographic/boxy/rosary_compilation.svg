@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 1000 1000" width="1000px" height="1000px" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <path d="M 800 375 C 800 582.107 665.685 750 500 750 C 334.315 750 200 582.107 200 375 C 200 167.893 334.315 0 500 0 C 665.685 0 800 167.893 800 375 Z" style="stroke: rgb(17, 21, 5); stroke-width: 2px; fill: none;" bx:origin="0.5 0.5"/>
+  <g transform="matrix(1, 0, 0, 1, -0.330307, -3.924988)">
+    <circle style="fill: rgb(242, 134, 18);" cx="49.189" cy="143.783" r="21.459"/>
+    <circle style="fill: rgb(182, 242, 18);" cx="49.189" cy="45.946" r="21.459"/>
+    <circle style="fill: rgb(61, 90, 221);" cx="49.189" cy="242.162" r="21.459"/>
+    <circle style="fill: rgb(204, 22, 37);" cx="49.189" cy="345.405" r="21.459"/>
+    <circle style="fill: rgb(23, 161, 30);" cx="49.189" cy="448.108" r="21.459"/>
+  </g>
+  <circle style="fill: rgb(242, 134, 18); filter: none;" cx="149.852" cy="139.858" r="21.459"/>
+  <circle style="fill: rgb(182, 242, 18);" cx="149.852" cy="42.021" r="21.459"/>
+  <circle style="fill: rgb(61, 90, 221);" cx="149.852" cy="238.237" r="21.459"/>
+  <circle style="fill: rgb(204, 22, 37);" cx="149.852" cy="341.48" r="21.459"/>
+  <circle style="fill: rgb(23, 161, 30);" cx="149.852" cy="444.183" r="21.459"/>
+  <path d="M 141.852 259.488 H 181.852 V 350.488 H 261.852 V 390.488 H 181.852 V 559.488 H 141.852 V 390.488 H 61.852 V 350.488 H 141.852 Z" style="stroke: rgb(7, 8, 2); fill: none;" transform="matrix(1, 0.000073, -0.000073, 1, -61.826275, 441.500366)" bx:shape="cross 61.852 259.488 200 300 40 40 0.37 1@b9296cad"/>
+  <path d="M -321.967 -948.994 Q -300.813 -988.515 -279.66 -948.994 L -257.865 -908.276 Q -236.711 -868.755 -279.019 -868.755 L -322.608 -868.755 Q -364.916 -868.755 -343.762 -908.276 Z" style="stroke: rgb(0, 0, 0); fill: none;" transform="matrix(-1, 0, 0, -1, 0, 0)" bx:shape="triangle -364.916 -988.515 128.205 119.76 0.5 0.33 1@a7d0a236"/>
+  <circle style="fill: rgb(23, 161, 30);" cx="-95.033" cy="465.428" r="21.459" transform="matrix(1, 0, 0, 1, 145.0332, 84.572312)"/>
+  <path d="M 763.109 564.374 m -25 0 a 25 25 0 1 0 50 0 a 25 25 0 1 0 -50 0 Z M 763.109 564.374 m -21.4 0 a 21.4 21.4 0 0 1 42.8 0 a 21.4 21.4 0 0 1 -42.8 0 Z" style="fill: rgb(249, 26, 26);" transform="matrix(1, 0.000068, -0.000068, 1, -613.070409, -14.425621)" bx:shape="ring 763.109 564.374 21.4 21.4 25 25 1@e57dca9c"/>
+</svg>

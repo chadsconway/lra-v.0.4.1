@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <circle style="fill: rgb(242, 134, 18);" cx="49.189" cy="143.783" r="21.459"/>
+    <circle style="fill: rgb(182, 242, 18);" cx="49.189" cy="45.946" r="21.459"/>
+    <circle style="fill: rgb(61, 90, 221);" cx="49.189" cy="242.162" r="21.459"/>
+    <circle style="fill: rgb(204, 22, 37);" cx="49.189" cy="345.405" r="21.459"/>
+    <circle style="fill: rgb(23, 161, 30);" cx="49.189" cy="448.108" r="21.459"/>
+  </g>
+  <circle style="fill: rgb(242, 134, 18); filter: none;" cx="149.189" cy="143.783" r="21.459"/>
+  <circle style="fill: rgb(182, 242, 18);" cx="149.189" cy="45.946" r="21.459"/>
+  <circle style="fill: rgb(61, 90, 221);" cx="149.189" cy="242.162" r="21.459"/>
+  <circle style="fill: rgb(204, 22, 37);" cx="149.189" cy="345.405" r="21.459"/>
+  <circle style="fill: rgb(23, 161, 30);" cx="149.189" cy="448.108" r="21.459"/>
+</svg>

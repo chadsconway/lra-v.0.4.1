@@ -1,18 +1,17 @@
 <template>
 	<div id="app">
-		<client-controls></client-controls>
 		<v-app>
 			<fab></fab>
 
 			<Header />
 
 			<Sidenav v-bind:class="{ hideSideNav: sidenavIsHid }" />
-			<div class="contwrap">
+			<div class="contwrap dh-bg">
 				<nuxt />
 			</div>
 			<MobileBottomNav />
 
-			<Footer />
+			<!-- <Footer /> -->
 		</v-app>
 	</div>
 </template>
@@ -56,7 +55,15 @@ export default {
 </script>
 <style>
 .contwrap {
-	padding-bottom: 150px;
+	position: absolute;
+	padding-top: 60px;
+	width: 100%;
+}
+a:hover {
+	color: #007977;
+}
+.dh-bg {
+	background-color: white;
 }
 
 .shrinkfab {

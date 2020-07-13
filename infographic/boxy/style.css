@@ -1,0 +1,38 @@
+:root {
+	--bead-color: 'radial-gradient(red 5%, green 15%, blue 60%)';
+	--container-bg-color: Tomato;
+	--svg-bg-color: MediumSeaGreen;
+	--use-bg-color: Linen;
+}
+#dh-radgrad-0-stop {
+	stop-color: #fff;
+}
+#dh-radgrad-50-stop {
+	stop-color: #1e90ff;
+}
+#dh-radgrad-100-stop {
+	stop-color: #0000cd;
+}
+.container {
+	height: 600px;
+	width: 600px;
+	background-color: var(--container-bg-color);
+}
+.infograph {
+	border: 5px solid rgb(0, 0, 255);
+}
+.dh-use-symbol {
+	background-color: var(--use-bg-color);
+}
+#dh-use-use-generic-bead-1 {
+	z-index: 100;
+}
+#dh-use-use-generic-bead-2 {
+	transform: translateX(20px);
+	z-index: 100;
+}
+.dh-set-rect {
+	width: 50px;
+	height: 50px;
+	background-color: Tomato;
+}

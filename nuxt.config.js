@@ -1,11 +1,11 @@
 export default {
 	generate: {
-		subFolders: false
+		subFolders: false,
 	},
 	mode: 'universal',
 	server: {
 		port: 8000,
-		host: '0.0.0.0'
+		host: '0.0.0.0',
 	},
 	/*
 	 ** Headers of the page
@@ -18,27 +18,33 @@ export default {
 			{
 				hid: 'description',
 				name: 'description',
-				content: process.env.npm_package_description || ''
-			}
+				content: process.env.npm_package_description || '',
+			},
 		],
 		link: [
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
 			{
 				rel: 'stylesheet',
 				type: 'text/css',
-				href: 'https://www.w3schools.com/w3css/4/w3.css'
+				href: 'https://www.w3schools.com/w3css/4/w3.css',
 			},
 			{
+				href:
+					'https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Lobster&family=Oxygen&family=Playball&family=Poppins:wght@200;300;400&family=Roboto+Mono:wght@300&family=Satisfy&family=Shadows+Into+Light&display=swap',
 				rel: 'stylesheet',
-				type: 'text/css',
-				href: ''
 			},
-			{
-				rel: 'stylesheet',
-				type: 'text/css',
-				href: ''
-			}
-		]
+			// {
+			// 	rel: 'stylesheet',
+			// 	type: 'text/css',
+			// 	href:
+			// 		'https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/		spectrum.min.css',
+			// },
+			// {
+			// 	rel: 'stylesheet',
+			// 	type: 'text/css',
+			// 	href: '',
+			// },
+		],
 	},
 	/*
 	 ** Customize the progress-bar color
@@ -53,10 +59,20 @@ export default {
 	 */
 	plugins: [
 		/**
+		 * jquery - for spectrum plugin
+		 */
+		{ src: '@/plugins/jquery.js', mode: 'client' },
+
+		/**
+		 * Spectrum colorpicker
+		 */
+		// { src: '@/plugins/spectrum.js', mode: 'client' },
+
+		/**
 		 * Country and regions select dropdown for
 		 * join.vue
 		 */
-		'@/plugins/countryregionselect.js'
+		{ src: '@/plugins/countryregionselect.js' },
 	],
 	/*
 	 ** Nuxt.js dev-modules
@@ -72,7 +88,7 @@ export default {
 		'@nuxtjs/axios',
 		'@nuxtjs/pwa',
 		// Doc: https://github.com/nuxt-community/dotenv-module
-		'@nuxtjs/dotenv'
+		'@nuxtjs/dotenv',
 	],
 	/*
 	 ** Axios module configuration
@@ -86,6 +102,10 @@ export default {
 		/*
 		 ** You can extend webpack config here
 		 */
-		extend(config, ctx) {}
-	}
+		extend(config, ctx) {
+			if (ctx.isClient) {
+				console.log(ctx);
+			}
+		},
+	},
 };

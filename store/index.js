@@ -13,6 +13,40 @@ export const state = () => ({
 	serverinitid: 0,
 	message: 'initial message',
 	id: 0,
+	dhThemes: {
+		colors: [],
+	},
+	quotes: [
+		{
+			author: 'Saint Proclus',
+			quotation:
+				'Mary is the glory of virgins, the joy of mothers, the bulwark of the faithful, and the crown of the Church.',
+		},
+		{
+			author: 'Venerable Archbishop Fulton Sheen',
+			quotation: 'What air is to the lungs, prayer is to the soul',
+		},
+		{
+			author: 'Saint John Eudes',
+			quotation:
+				'Let all hearts give themselves to Mary so that she may fill them with her heart and the Heart of Jesus!',
+		},
+		{
+			author: 'Saint Bernard',
+			quotation:
+				'On every occasion and in every way, Mary comes to the aid of our misery, calms our fears, and perks up our faith.',
+		},
+		{
+			author: 'Saint Bernard',
+			quotation:
+				'Mary sustains our hope, dispels our misgivings, and remedies our laxity.',
+		},
+		{
+			author: 'Saint John Bosco',
+			quotation:
+				'The purer are your words and your glances, the more pleasing will you be to the Blessed Virgin; and the greater will be the graces that she will obtain for you from her Divine Son.',
+		},
+	],
 
 	contacts: [
 		{

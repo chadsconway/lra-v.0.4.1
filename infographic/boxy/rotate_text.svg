@@ -1,0 +1,5 @@
+<text font-family="Verdana" font-size="55" fill="blue" >
+    <tspan x="250" y="150" rotate="-30,0,30">
+      Hello, out there
+    </tspan>
+  </text>

@@ -301,6 +301,44 @@ export default Vue.extend({
 });
 </script>
 <style scoped>
+.l5 {
+	background-color: #ebffff;
+}
+.l4 {
+	background-color: #bcfffe;
+}
+.l3 {
+	background-color: #78fffd;
+}
+.l2 {
+	background-color: #35fffc;
+}
+.l1 {
+	background-color: #00f1ed;
+}
+.w3 {
+	background-color: #00aba9;
+}
+.d1 {
+	background-color: #009c99;
+}
+.d2 {
+	background-color: #008b88;
+}
+.d3 {
+	background-color: #007977;
+}
+.d4 {
+	background-color: #006866;
+}
+.d5 {
+	background-color: #005755;
+}
+
+.gradient1 {
+	color: #fff;
+	background-image: linear-gradient(to right, #007977, #005755);
+}
 .chkbx {
 	color: white;
 }
