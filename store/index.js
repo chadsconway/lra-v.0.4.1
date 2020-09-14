@@ -5,7 +5,14 @@ process.env.TESTING_URL = 'http://1086.live/testbed';
 process.env.PRODUCTION = false;
 process.env.PRODUCTION_URL = 'http://thelivingrosaryapostolate.com';
 
+import Vue from 'vue';
+import axios from 'axios';
+import Vuex from 'vuex';
+
+Vue.use(Vuex);
+
 export const state = () => ({
+	loading: false,
 	sidebarOpen: false,
 	sidenavIsHid: false,
 	myTestMessage: 'This is the unedited message',
@@ -17,6 +24,40 @@ export const state = () => ({
 		colors: [],
 	},
 	quotes: [
+		{
+			author: 'Saint John Paul II',
+			quotation:
+				'How beautiful is the family that recites the Rosary every evening!',
+		},
+		{
+			author: 'Saint John Paul II',
+			quotation:
+				'I plead with you--never, ever give up on hope, never doubt, never tire, and never become discouraged.  Be not afraid.',
+		},
+		{
+			author: 'Saint John Paul II',
+			quotation:
+				"By its nature, the recitation of the Rosary calls for a quiet rhythm and lingering face, helping the individual to meditate on the mysteries of the Lord's life as seen through the eyes of Mary who was closest to Jesus.  In this way, the unfathomable riches of these mysteries are disclosed.",
+		},
+		{
+			author: 'Saint John Paul II',
+			quotation:
+				'Do not be ashamed to recite the Rosary alone, while you walk along the streets to school, to the university, or to work, or as you commute by public transport.',
+		},
+		{
+			author: 'Saint John Paul II',
+			quotation: 'The Rosary is my favorite prayer.  It is a marvelous prayer.',
+		},
+		{
+			author: 'Pope Pius XI',
+			quotation:
+				'The Rosary is a powerful weapon to put the demons to flight and to keep oneself from sin...If you desire peace in your hearts, in your homes, and in your country, assemble each evening to recite the Rosary.  Let not even one day pass without saying it, no matter how burdened you may be with many cares and labors.',
+		},
+		{
+			author: 'Saint Padre Pio',
+			quotation:
+				'Some people are so foolish that they think they can go through life without the help of the Blessed Mother.  Love the Madonna and pray the rosary, for her Ropsary is the weapon against the eveils of the world today.  All graces given by God pass through the Blessed Mother.',
+		},
 		{
 			author: 'Saint Proclus',
 			quotation:
@@ -47,7 +88,8 @@ export const state = () => ({
 				'The purer are your words and your glances, the more pleasing will you be to the Blessed Virgin; and the greater will be the graces that she will obtain for you from her Divine Son.',
 		},
 	],
-
+	charitable_contributions_letter:
+		'Living Rosary Charitable Contributions To Our Living Rosary Family,  __endline__Our Apostolate has grown since its beginning in 2012 through funding and time investments from founders, resources, parishes as well as dedicated members like yourselves that have contributed and to whom we will be forever grateful.  __endline__   __endline__ As the Apostolate has grown so have our needs to maintain the continued spreading of Our Lord and blessed Mothers message through the rosary. To date this Living Rosary is in 68+ Countries with tens of thousands of members strong as we continue inviting more and more daily to join. __endline__  __endline__ Members that have given in the past, we remain humbled by your generosity and turn again to you to ask for your contributions to allow us to continue sharing this Devotion as we have done in the past by giving freely of ourselves to the beneficiaries. __endline__ 	 __endline__ Our ask now is that you prayerfully consider your ability to contribute in the fashion you are most comfortable with as all contributions will aid in the continued scale and growth of This Living Rosary Apostolate with our goal being $1,200.00  monthly to absorb the developing costs.  __endline__  __endline__ We remain grateful for your continued prayers for our Apostolate and thank you in advance from the bottom of our hearts for all the charitable contributions you continue to provide keeping This Living Rosary “Living”!!! __endline__ God Love You!!! __endline__ __endline__ Our Love & Prayers Always, __endline__ __endline__  The Living Rosary Apostolate Founders __endline__ __endline__ [insert website link here]  __endline__ ',
 	contacts: [
 		{
 			name: 'Frank Bonack',
@@ -486,6 +528,14 @@ export const state = () => ({
 
 // have to be synchronous
 export const mutations = {
+	SET_QUOTES(state, quotes) {
+		quotes.forEach((val, ind, arr) => {
+			state.quotes[ind] = val;
+		});
+	},
+	SET_LOADING_STATUS(state, status) {
+		state.loading = status;
+	},
 	sidenavNowHid(state, sidenavIsHid) {
 		state.sideNavIsHid = sidenavIsHid;
 	},
@@ -510,9 +560,18 @@ export const mutations = {
 		state.message = arg.message;
 		state.id = arg.id;
 	},
+	resetQuotes(state, arg) {
+		state.quotes = arg.quotes;
+	},
 };
 
 export const getters = {
+	getLoading(state) {
+		return state.loading;
+	},
+	getQuotes(state) {
+		return state.quotes;
+	},
 	getSidenavIsHid: (state) => {
 		return state.sideNavIsHid;
 	},
@@ -528,6 +587,19 @@ export const getters = {
 // can be async
 // trigger action with store.dispatch('<action>')
 export const actions = {
+	fetchQuotes(context) {
+		context.commit('SET_LOADING_STATUS', true);
+		axios
+			.get('http://localhost:9000/api/getQuotes')
+			.then((response) => {
+				console.log('response.data = ' + response.data);
+				context.commit('SET_QUOTES', response.data.quotes);
+				context.commit('SET_LOADING_STATUS', false);
+			})
+			.catch((error) => {
+				console.log('error = ' + error.response);
+			});
+	},
 	updateSideNavIsHid: ({ commit, state }, sidenavIsHid) => {
 		commit('sidenavNowHid', sidenavIsHid);
 	},

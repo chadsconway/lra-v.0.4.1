@@ -14,6 +14,12 @@
 			</svg>
 			Home
 		</nuxt-link>
+		<nuxt-link to="/quotes" class=" w3-bar-item w3-button cc-text">
+			<svg viewBox="0 0 310 310" width="30" height="30" class="icon">
+				<use xlink:href="#church" />
+			</svg>
+			Quotes
+		</nuxt-link>
 
 		<nuxt-link to="/how" class=" w3-bar-item w3-button cc-text">
 			<svg viewBox="0 0 512 512.00027" width="30" height="30" class="icon">

@@ -1,8 +1,6 @@
 <template> </template>
 <style>
-body {
-	background-color: white;
-
+:root {
 	--primary: '#1976D2';
 	--secondary: '#424242';
 	--accent: '#82B1FF';
@@ -10,6 +8,52 @@ body {
 	--info: '#2196F3';
 	--success: '#4CAF50';
 	--warning: '#FFC107';
+}
+.dh-bg-primary {
+	background-color: var(--primary);
+}
+.dh-bg-secondary {
+	background-color: var(--secondary);
+}
+.dh-bg-accent {
+	background-color: var(--accent);
+}
+.dh-bg-error {
+	background-color: var(--error);
+}
+.dh-bg-info {
+	background-color: var(--info);
+}
+.dh-bg-success {
+	background-color: var(--success);
+}
+.dh-bg-warning {
+	background-color: var(--warning);
+}
+
+.dh-text-text-primary {
+	color: var(--primary);
+}
+.dh-text-secondary {
+	color: var(--secondary);
+}
+.dh-text-accent {
+	color: var(--accent);
+}
+.dh-text-error {
+	color: var(--error);
+}
+.dh-text-info {
+	color: var(--info);
+}
+.dh-text-success {
+	color: var(--success);
+}
+.dh-text-warning {
+	color: var(--warning);
+}
+body {
+	background-color: white;
 }
 .l5 {
 	background-color: #ebffff;

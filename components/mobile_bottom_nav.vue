@@ -148,14 +148,6 @@ export default {
 	data() {
 		return {
 			navClasses: 'w3-theme-d3',
-			sheet: false,
-			tiles: [
-				{ img: 'keep.png', title: 'Keep' },
-				{ img: 'inbox.png', title: 'Inbox' },
-				{ img: 'hangouts.png', title: 'Hangouts' },
-				{ img: 'messenger.png', title: 'Messenger' },
-				{ img: 'google.png', title: 'Google+' },
-			],
 		};
 	},
 	components: {
